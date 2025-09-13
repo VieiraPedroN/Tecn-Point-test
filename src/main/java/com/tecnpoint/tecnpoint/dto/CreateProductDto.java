@@ -1,4 +1,18 @@
 package com.tecnpoint.tecnpoint.dto;
 
-public record CreateProductDto (){
+import java.util.List;
+
+public record CreateProductDto(
+
+        String name,
+
+        String description,
+
+        String category,
+
+        List<CreateProductVariationDto> productVariations,
+
+        Boolean available
+
+) {
 }
